@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jungle-book-coll-a74e6ba2c2a749c7a6a167ea3c6fc591-srv
+spec:
+  selector:
+    app: jungle-book-coll-a74e6ba2c2a749c7a6a167ea3c6fc591
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9016
+  type: LoadBalancer
